@@ -8,7 +8,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-        OPENAI_API_KEY: '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'
-        CLOUD_STORAGE_BUCKET:
+        OPENAI_API_KEY: 'OPENAI_API_KEY'
+        CLOUD_STORAGE_BUCKET: 'CLOUD_STORAGE_BUCKET'
     volumes:
       - .:/app
