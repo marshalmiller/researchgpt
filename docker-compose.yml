@@ -4,11 +4,11 @@ services:
   rottingresearch:
     build: .
     container_name: researchgpt
-    restart: always
+    restart: unless-stopped
     ports:
-      - "5000:5000"
+      - "8080:8080"
     environment:
-        OPENAI_API_KEY: 'ypur key here'
+        OPENAI_API_KEY: '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'
         CLOUD_STORAGE_BUCKET:
     volumes:
       - .:/app
