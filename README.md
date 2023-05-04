@@ -2,12 +2,6 @@
 
 This is a flask app provides an interface to enable a conversation with a research paper. You can enter a link to a pdf hosted online or upload your own pdf. The app will then extract the text from the pdf, create embeddings from the text and use them with the openai api to generate a response to a question you ask. It will also return a source for the part of the text it used to generate the response and the page number.
 
-## Example 
-
-
-https://user-images.githubusercontent.com/36257370/230793133-ecb579d3-47d9-4200-916a-9c5978a40b09.mp4
-
-
 ## Installation
 
 ```bash
