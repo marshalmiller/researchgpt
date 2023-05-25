@@ -3,7 +3,7 @@ version: '3'
 services:
   researchgpt:
     container_name: researchgpt
-    image: marshalmiller/researchgpt:latest
+    image: marshalmiller/researchgpt:main
     restart: unless-stopped
     ports:
       - "80:8080"
