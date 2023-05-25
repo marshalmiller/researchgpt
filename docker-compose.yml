@@ -1,14 +1,16 @@
 version: '3'
 
 services:
-  rottingresearch:
-    build: .
+  researchgpt:
     container_name: researchgpt
+    image: researchgpt
     restart: unless-stopped
     ports:
       - "80:8080"
     environment:
-        OPENAI_API_KEY: 'OPENAI_API_KEY'
-        CLOUD_STORAGE_BUCKET: 'CLOUD_STORAGE_BUCKET'
+      - FLASK_APP: "app"
+      - APP_SECRET_KEY: "change_me"
+      - OPENAI_API_KEY: 'OPENAI_API_KEY'
+      - CLOUD_STORAGE_BUCKET: 'CLOUD_STORAGE_BUCKET'
     volumes:
-      - .:/app
+      - app:/app
